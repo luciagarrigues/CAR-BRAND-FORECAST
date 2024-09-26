@@ -1,0 +1,105 @@
+---
+title: "Car Sales Forecast"
+output: html_document
+date: "2024-09-26"
+---
+Car Sales Analysis and Forecasting
+
+Overview
+
+This project focuses on analyzing car sales data to derive actionable insights, predict car prices, and forecast future trends. The dataset used is Car_data.csv, which includes information on car sales, customer details, prices, and dealer regions.
+
+Key Steps in the Project:
+Data Cleaning: Handled missing values, fixed encoding issues, and formatted the dataset for analysis.
+Exploratory Data Analysis (EDA): Descriptive statistics, customer segmentation, sales analysis by region and model.
+Predictive Modeling: Built a Random Forest model to predict car prices.
+Time Series Forecasting: Forecasted future car prices using Exponential Smoothing.
+
+Dataset
+
+File: Car_data.csv
+Columns:
+Car_id: Unique ID for each car.
+Date: Sale date.
+Customer Name: Name of the customer.
+Gender: Customer's gender.
+Annual Income: Customer's annual income.
+Dealer_Name: Name of the car dealer.
+Company: Car manufacturer.
+Model: Car model.
+Engine: Type of engine.
+Transmission: Type of transmission (auto/manual).
+Color: Car color.
+Price ($): Price of the car in dollars.
+Dealer_No: Dealer number.
+Body Style: Car body style (SUV, Passenger, Truck, etc.).
+Phone: Customer's phone number.
+Dealer_Region: Region of the dealer.
+
+
+
+
+Key Analyses
+
+
+1. Data Cleaning
+Removed duplicate headers and handled encoding issues.
+Converted columns like Price ($) and Annual Income to numeric.
+Handled date formats and fixed special character encoding issues.
+
+2. Exploratory Data Analysis (EDA)
+Descriptive Statistics: Calculated mean, median, and standard deviation for prices.
+Customer Segmentation: Segmented customers based on their annual income and analyzed car purchases within each income bracket.
+Sales Analysis:
+Sales by dealer region.
+Most popular car models.
+Most common body styles.
+
+3. Predictive Modeling
+Used Random Forest for predicting car prices based on features like Model, Annual Income, Dealer_Region, and Body Style.
+Evaluated model performance with Mean Squared Error (MSE).
+
+4. Forecasting
+Applied Exponential Smoothing to forecast future car prices based on historical sales data.
+Forecasted car prices for the next 30 days.
+Visualizations
+
+1. Sales by Region
+Bar chart showing total sales by region, with Austin and Aurora being top-performing regions.
+
+2. Distribution of Body Styles
+Pie chart showing the distribution of car body styles (SUVs, Passenger, etc.).
+
+3. Predicted vs Actual Prices
+Scatter plot comparing the actual car prices with the predicted prices from the Random Forest model.
+
+4. Price Forecasting
+Line chart displaying forecasted car prices for the next 30 days using Exponential Smoothing.
+
+  Model Performance
+Random Forest Regressor was used to predict car prices.
+Mean Squared Error (MSE) for the Random Forest model: (Insert final MSE here).
+Time Series Forecasting: Forecasted car prices for the next 30 days using Exponential Smoothing.
+
+Conclusion
+
+This project provided valuable insights into car sales trends, identified high-demand car models, and allowed for the prediction of car prices. The use of Random Forest and Exponential Smoothing helped in understanding both current and future market trends.
+
+Next Steps
+Implement additional models such as Gradient Boosting or XGBoost for better price predictions.
+Improve forecasting by incorporating more advanced time-series models like ARIMA.
+Explore more features in the dataset for enhanced segmentation and predictions.
+How to Run the Project
+Clone the repository: git clone <repository_url>
+Install required libraries: pip install -r requirements.txt
+Run the Jupyter notebook for analysis: jupyter notebook Car_Sales_Analysis.ipynb
+Let me know if you'd like to make any adjustments to this README! You can now upload this project to GitHub with this documentation.
+
+
+
+
+
+
+
+
+
